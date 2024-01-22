@@ -1,0 +1,62 @@
+<!--1.Create a page which has three buttons when clicked each should show a alert, prompt and confirm. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+</head>
+<body>
+    <button  onclick="showAlert()">Show Alert</button><br><br>
+    <button  onclick="showPrompt()">Show Prompt</button><br><br>
+    <button  onclick="showConfirm()">Show Confirm</button><br><br>
+    
+    <script>
+        function showAlert()
+        {
+           alert('Alert Message...!')
+        }
+
+        function showPrompt()
+        {
+           var input = prompt('Enter message:');
+           if(input!==null)
+           {
+            alert('Entered value:'+input);
+           }
+        }
+
+        function showConfirm()
+        {
+           var input = confirm('Do you want to procced..?')
+           if(input)
+           {
+            alert('Clicked ok...!')
+           }
+           else
+           {
+            alert('Clicked Cancel...!')
+           }
+        }
+
+// <!-- //2.Create a page which has three buttons when clicked each should show a alert, prompt and confirm. When the confirm
+// // button is clicked on confirm modal, change the background color of the page.
+
+//         function showConfirm()
+//         {
+//            var input = confirm('Do you want to procced to change background color..?')
+//            if(input)
+//            {
+//             document.body.style.backgroundColor='lightblue';
+//             alert('Background color changed to light purple...!')
+//            }
+//            else
+//            {
+//             alert('Clicked Cancel...!')
+//            }
+//         } -->
+  
+</script>
+    
+</body>
+</html>
