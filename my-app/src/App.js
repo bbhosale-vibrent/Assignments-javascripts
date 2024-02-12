@@ -1,21 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HookMouse from "./hooks/HookMouse";
+import Form from "./login";
+// import ClassCounter from "./hooks/ClassCounter";
+//import HookCounter from "./hooks/HookCounter";
+import UseEffectHook from "./hooks/useEffecthook";
+import ApiCovid from "./ApiCovid";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello World....!</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-      </header>
-    </div>
+   <>
+    {/* <Form/> */}
+    {/* <ClassCounter></ClassCounter> */}
+    {/* <HookCounter></HookCounter> */}
+    {/* <UseEffectHook></UseEffectHook> */}
+    {/* <HookMouse></HookMouse> */}
+    <ApiCovid></ApiCovid>
+    </>
   );
 }
 
