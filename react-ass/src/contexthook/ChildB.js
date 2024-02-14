@@ -1,7 +1,7 @@
 import React from 'react'
-import ComponentF from './ComponentF'
+import ComponentF from './ChildC'
 
-function ComponentE() {
+function ChildB() {
   return (
     <div>
       <ComponentF></ComponentF>
@@ -9,4 +9,4 @@ function ComponentE() {
   )
 }
 
-export default ComponentE
+export default ChildB

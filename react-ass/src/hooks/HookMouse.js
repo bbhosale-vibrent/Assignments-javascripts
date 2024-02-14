@@ -17,9 +17,9 @@ function HookMouse() {
       console.log("Component unmount");
       window.removeEventListener("mousemove",logmouseposition);
     }
-    
       },[]);
 
+      
   return (
     <div>
       Hooks  X - {X} Y - {Y}
