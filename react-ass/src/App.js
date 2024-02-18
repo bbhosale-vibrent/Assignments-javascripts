@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import React, { Component, createContext } from "react";
 // import ChildC from "./contexthook/ChildC";
 import ClickCounter from "./HOC/ClickCounter";
 import HoverCounter from "./HOC/HoverCounter";
@@ -9,12 +9,13 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-
-import Navbar from './Pages/Navbar';
-import Home from './Pages/Home';
-import Contact from './Pages/Contact';
-import About from './Pages/About';
-import Products from './Pages/Products';
+import Login from "./HOCforlogin/Login";
+import NavbarLogin from './HOCforlogin/NavbarLogin';
+import HomeLogin from './HOCforlogin/HomeLogin';
+import ContactLogin from './HOCforlogin/ContactLogin';
+import AboutLogin from './HOCforlogin/AboutLogin';
+import ProductLogin from './HOCforlogin/ProductLogin';
+import PrivateRoute from "./HOCforlogin/PrivateRoute";
 
 // const data = createContext();
 // const data1 = createContext();
@@ -30,12 +31,13 @@ function App() {
 //       </data1.Provider>
 //     </data.Provider> */}
      <Router>
-       <Navbar/>
+       <NavbarLogin/>
        <Routes>
-           <Route path="/" element={<Home/>}/>
-           <Route path="About" element={<About/>}/>            
-           <Route path="Contact" element={<Contact/>}/>
-           <Route path="Products" element={<Products/>}/>            
+           <Route path="Login" element={<Login/>}/>
+           <Route path="/" element={<PrivateRoute Component={HomeLogin}/>}/>
+           <Route path="About" element={<PrivateRoute Component={AboutLogin}/>}/>            
+           <Route path="Contact" element={<ContactLogin/>}/>
+           <Route path="Products" element={<PrivateRoute Component={ProductLogin}/>}/>            
          </Routes>
      </Router>
 
@@ -43,6 +45,7 @@ function App() {
 <HoverCounter/> */}
 
 {/* <FRParentInput/>   */}
+{/* <Login/> */}
  </>
 
    )
