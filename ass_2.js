@@ -27,7 +27,9 @@ function getcolor(letter)
         'G' : 'Green',
         'Y' : 'Yellow',
     };
-     return color[letter.toUpperCase()]||'Black';
+    //  return color[letter];
+     return color[letter.toUpperCase()];
+
 }
 let name = "Bhagya";
 displayname(name);
