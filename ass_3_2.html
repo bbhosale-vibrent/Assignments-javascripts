@@ -4,31 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="ass_3_2.js"></script>
+    <link rel="stylesheet" href="ass_3_2.css">
 </head>
-<style>
-    body{
-        margin: 0;
-        padding: 0;
-    }
-    #scrollButton{
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        padding: 15px;
-        font-size: 16px;
-        transition: all 0.3s ease;
-    }
-</style>
-
-<script>
-    
-    window.addEventListener('scroll',function(){
-        let button = document.getElementById('scrollButton');
-        let scrollPosition = window.scrollY;
-        let newSize = Math.max(16,16+scrollPosition/10);
-        button.style.fontSize = newSize+'px';
-    });
-</script>
 <body>
     <p>
         For keeping your body and mind healthy you have to follow certain rules that will help you achieve your goal. Besides, there are certain measures that will help you to stay healthy.

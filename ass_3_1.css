@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#drag-and-drop-area{
+    width: 500px;
+    height: 300px;
+    border: 2px dashed #0e0d0d;
+    text-align: center;
+    line-height: 300px;
+    font-size: 38px;
+    user-select: none;
+}
