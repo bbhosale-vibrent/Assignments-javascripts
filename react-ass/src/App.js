@@ -16,6 +16,7 @@ import ContactLogin from './HOCforlogin/ContactLogin';
 import AboutLogin from './HOCforlogin/AboutLogin';
 import ProductLogin from './HOCforlogin/ProductLogin';
 import PrivateRoute from "./HOCforlogin/PrivateRoute";
+import Example from "./props/Example";
 
 // const data = createContext();
 // const data1 = createContext();
@@ -25,12 +26,14 @@ function App() {
 // const age = "21";
  return(
  <>
+   <Example name="Bhagyashri" age="21" />
+
 {/* //     <data.Provider value={name}>
 //       <data1.Provider value={age}>
 //          <ChildC/>
 //       </data1.Provider>
 //     </data.Provider> */}
-     <Router>
+     {/* <Router>
        <NavbarLogin/>
        <Routes>
            <Route path="Login" element={<Login/>}/>
@@ -39,7 +42,7 @@ function App() {
            <Route path="Contact" element={<ContactLogin/>}/>
            <Route path="Products" element={<PrivateRoute Component={ProductLogin}/>}/>            
          </Routes>
-     </Router>
+     </Router> */}
 
 {/* <ClickCounter/>
 <HoverCounter/> */}
